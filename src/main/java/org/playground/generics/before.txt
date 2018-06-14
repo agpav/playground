@@ -1,0 +1,50 @@
+// Compiled from Generics.java (version 1.8 : 52.0, super bit)
+public class generics.Generics {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Generics();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 6]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: generics.Generics
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 0, Locals: 1
+  public static void main(java.lang.String[] args);
+    0  return
+      Line numbers:
+        [pc: 0, line: 10]
+      Local variable table:
+        [pc: 0, pc: 1] local: args index: 0 type: java.lang.String[]
+  
+  // Method descriptor #6 ()V
+  // Stack: 2, Locals: 3
+  public void foo();
+     0  new java.util.ArrayList [19]
+     3  dup
+     4  invokespecial java.util.ArrayList() [21]
+     7  astore_1 [list]
+     8  aload_1 [list]
+     9  ldc <String "hello"> [22]
+    11  invokeinterface java.util.List.add(java.lang.Object) : boolean [24] [nargs: 2]
+    16  pop
+    17  aload_1 [list]
+    18  iconst_0
+    19  invokeinterface java.util.List.get(int) : java.lang.Object [30] [nargs: 2]
+    24  checkcast java.lang.String [34]
+    27  astore_2 [s]
+    28  return
+      Line numbers:
+        [pc: 0, line: 13]
+        [pc: 8, line: 14]
+        [pc: 17, line: 15]
+        [pc: 28, line: 16]
+      Local variable table:
+        [pc: 0, pc: 29] local: this index: 0 type: generics.Generics
+        [pc: 8, pc: 29] local: list index: 1 type: java.util.List
+        [pc: 28, pc: 29] local: s index: 2 type: java.lang.String
+}
